@@ -11,6 +11,7 @@ Considere também que as características de seu personagem tenham alguma relaç
 ## REGRAS GERAIS
 Estamos interessados em ver como você utiliza suas habilidades e novas tecnologias para se apresentar para o mercado. Que jeito melhor do que nos mostrar a forma que você codifica? Queremos que você nos apresente  uma aplicação em Blockchain que traga alguma das vantagens dessa tecnologia tão revolucionaria. Aqui vão as regras. 
 - Faça a [cópia](https://help.github.com/articles/fork-a-repo/) do repositório (fork), desenvolva e submeta uma [solicitação de mudança](https://help.github.com/articles/creating-a-pull-request/) (pull request) no branch master.
+- Em caso de dúvidas basta abrir uma issue com sua pergunta (aqui mesmo no github) que nossa equipe irá respondê-lo assim que possível.
 - Para criação da sua aplicação pode ser usada a plataforma Ethereum ou pode ser criada do zero.
 - Sua Blockchain deve implementar o mínimo necessário para o funcionamento (método de consenso, árvore de merkle, conteúdo do bloco, segurança)
 - Sua Blockchain pode ser feita somente com um nó nesse estudo de caso
