@@ -1,6 +1,6 @@
 [![N|Solid](http://solutis.com.br/images/logo.png)](http://solutis.com.br)
 
-# NOSSO DESAFIO
+# NOSSO DESAFIO MORTY - BLOCKCHAIN
 “Você considera a ideia de multiverso, e pensa nessa estrutura como uma rede de infinitas possibilidades”. Parabéns soldado! Você foi selecionado para ser enviado a um novo universo. Porém as tecnologias existentes não conseguem garantir sua segurança durante a transferência entre universos. Você precisa criar uma Blockchain para lhe transferir com segurança para o novo universo. Para isso sua Blockchain precisa possuir no mínimo as seguintes funções: 
 - Mineração (ex: trabalho que o soldado vai ter para construir o portal)
 - Transação (ex: efetivar a ida do soldado para o outro universo)
