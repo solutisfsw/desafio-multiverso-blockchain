@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Block Chain - Solutis</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+<style>
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+</style>
+
+<script>
+    $(document).ready(function(){
+        $("#add").click(function(){
+            let name = $("#name").val();
+            let content = $("#content").val();
+            $.ajax({
+                url:'{{base_url}}/blockchain/post',
+                method:'post',
+                dataType:'json',
+                data:{
+                    "name":name,
+                    "content":content
+                },
+                success:function(response){
+                    console.log(response);
+                    $("#blockchain").append('<li><p>Hash Anterior: '+response.previous_hash+'<br>Hash Atual: '+response.hash+'<br>Nome: '+response.name+'<br>Atributo: '+response.content+'<br>Nonce: '+response.nounce+'</p></li>');
+                },error:function(response){
+                    console.log(response);
+                }
+            });
+        });
+    });
+
+</script>
+
+<body class="bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#quemsoueu">Quem sou eu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#desafio">O desafio</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section id="home">
+    <div style="padding:250px;background-image: url(https://i.imgur.com/7T9364v.gif?noredirect) ;background-size:100%" class="jumbotron jumbotron-fluid">
+        <div class="container">
+        <h1 class="display-4" style="color:white">Block Chain - Solutis</h1>
+        <p class="lead" style="color:white">Uma demonstração de como funciona o Block Chain</p>
+        </div>
+    </div>
+  </section>
+
+  <section id="quemsoueu">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-6 text-center">
+                <img class="img-fluid" src="{{url_for('static',filename='softtware-engineer.png')}}" alt="">
+                <h3 class="display-7">Apresentação</h3>
+                <hr>
+                <p class="text-justify" style="margin-top:15px">
+                Ola, sou João Pedro Martins Bahiense Villas-Bôas, estudante de ciência da computação pela UNIFACS, atualmente trabalho na empresa TEMET Dev Ágil, como desenvolvedor Back End, com PHP, com o framework Laravel e esse é meu pull request para o desafio Morty com Block Chain.</p>
+            </div>
+            
+            <div class="col-md-6 text-center">
+                <img class="img-fluid" src="{{url_for('static',filename='computer.png')}}" alt="">    
+                <h3 class="display-7">Tecnologias Utilizadas</h3>
+                    <hr>
+                    <p class="text-justify" style="margin-top:15px">
+                        Para este desafio, as tecnologias que foram utilizadas: Python 3 com o framework Flask e Jquery.
+                    </p>
+            </div>
+        
+        </div>
+    </div>
+  </section>
+
+  <section id="desafio" style="padding-top:40px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                    <h3 class="display-3">Desafio</h3>
+                    <hr>
+            </div>
+            <div class="col-md-3 text-center" style="margin-top:90px;margin-bottom:50px">
+                <div class="form-group text-left">
+                    <label for="exampleInputEmail1">Nome do Guerreiro</label>
+                    <input type="text" class="form-control" placeholder="Nome" id="name">
+                </div>
+            <div class="form-group text-left">
+                <label for="exampleInputPassword1">Atributo</label>
+                <input type="text" class="form-control" id="content" placeholder="Atributo">
+            </div>
+                <button type="submit" id="add" class="btn btn-primary" style="float:right">Adcionar</button>
+            </div>
+
+            <div class="col-md-6 text-center" style="margin-top:75px;margin-bottom:50px">
+                   
+
+                    <div class="container mt-5 mb-5">
+                            <div class="row">
+                                <div class="col-md-9 offset-md-3">
+                                        <h3 class="display-7">Block Chain</h3>
+                                        <hr>
+                                    <ul id="blockchain" class="timeline text-justify">
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+            </div>
+        </div>
+    </div>
+
+</section>
+
+  <footer class="page-footer font-small text-light pt-4 bg-secondary">
+    <div class="container">   
+        <div class="row">  
+            <div class="col-md-4 textcenter"></div>
+            <div class="col-md-4 text-center">
+                <div class="footer-copyright text-center">© 2018 Copyright:
+                    <a style="color:lightblue" href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
+                </div>
+            <div class="col-md-4 textcenter"></div>
+        </div> 
+  </footer>
+</body>
+</html>
