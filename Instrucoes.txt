@@ -1,0 +1,20 @@
+Ola, sou João Pedro Martins Bahiense Villas-Bôas, estudante de ciência da computação pela UNIFACS, atualmente trabalho na empresa TEMET Dev Ágil, como desenvolvedor Back End, com PHP, com o framework Laravel e esse é meu pull request para o desafio Morty com Block Chain
+
+Como utilizar o Desafio.
+
+executar o comando pip3 install -r requeriments.txt para instalar ou atualizar os pacotes necessarios.
+
+A versão do Python utilizada foi a 3.6.6 
+
+#Como funciona?
+Primeiro executar o app.py , ele por default ja vem na porta 5000.
+
+O modulo BlockChain funciona é o gerador do Bloco que ficara rodando até reiniciar o servidor, ou seja possui apenas um bloco.
+
+Após isso, o formulário irá enviar para a rota configurada onde ele irá efetuar a transação.
+
+Alguma duvida meu email é joaopedrombvboas@gmail.com
+
+Desde já agradeço a oportunidade e vejo vocês no Hackathon, claro se gostarem do meu tabalho.
+
+Atenciosamente, João Pedro
