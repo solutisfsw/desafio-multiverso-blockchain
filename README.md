@@ -5,7 +5,9 @@ E-mail: mateussvincius22@gmail.com
 Acesso no gupy: mateus_vinicios@hotmail.com
 
 
-Para Executar a aplicação basta rodar:
+Comandos para executar:
+
+npm install package.json
 
 npm start
 
