@@ -1,46 +1,44 @@
-[![N|Solid](http://solutis.com.br/images/logo.png)](http://solutis.com.br)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# NOSSO DESAFIO MORTY - BLOCKCHAIN
-“Você considera a ideia de multiverso, e pensa nessa estrutura como uma rede de infinitas possibilidades”. Parabéns soldado! Você foi selecionado para ser enviado a um novo universo. Porém as tecnologias existentes não conseguem garantir sua segurança durante a transferência entre universos. Você precisa criar uma Blockchain para lhe transferir com segurança para o novo universo. Para isso sua Blockchain precisa possuir no mínimo as seguintes funções: 
-- Mineração (ex: trabalho que o soldado vai ter para construir o portal)
-- Transação (ex: efetivar a ida do soldado para o outro universo)
-- Conteúdo (ex: nome e habilidades do soldado)
+## Available Scripts
 
-Considere também que as características de seu personagem tenham alguma relação com você na vida real, assim a gente já lhe conhece melhor.
+In the project directory, you can run:
 
-## REGRAS GERAIS
-Estamos interessados em ver como você utiliza suas habilidades e novas tecnologias para se apresentar para o mercado. Que jeito melhor do que nos mostrar a forma que você codifica? Queremos que você nos apresente  uma aplicação em Blockchain que traga alguma das vantagens dessa tecnologia tão revolucionaria. Aqui vão as regras. 
-- Faça a [cópia](https://help.github.com/articles/fork-a-repo/) do repositório (fork), desenvolva e submeta uma [solicitação de mudança](https://help.github.com/articles/creating-a-pull-request/) (pull request) no branch master.
-- Em caso de dúvidas basta abrir uma issue com sua pergunta (aqui mesmo no github) que nossa equipe irá respondê-lo assim que possível.
-- Para criação da sua aplicação pode ser usada a plataforma Ethereum ou pode ser criada do zero.
-- Sua Blockchain deve implementar o mínimo necessário para o funcionamento (método de consenso, árvore de merkle, conteúdo do bloco, segurança)
-- Sua Blockchain pode ser feita somente com um nó nesse estudo de caso
-- Criação da UI para sua Blockchain é opcional 
-- Instruções para execução da sua Blockchain devem estar presentes no README, além de seu nome e e-mail utilizados no cadastro Gupy
+### `npm start`
 
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-### PLATAFORMA
-- Ethereum
+### `npm test`
 
-### INTERFACE
-- Java, JavaScript, Go ou Python
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Para UI sugerimos os seguintes frameworks:
-- Angular
-- ReactJS
-- CSS
+### `npm run build`
 
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### TESTES
-- Não se aplica.
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-### BUILD E EXECUÇÃO
-- Envie as instruções para execução da sua Blockchain. 
-- Cuidado com dependências externas não mapeadas que inviabilizem ou dificultem essas atividades.
-- Utilize ferramentas como npm e yarn para realizar as tarefas necessárias de build
-- Caso deseje, personalize sua aplicação e mostre que tem criatividade (+)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-# BOA SORTE!
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
