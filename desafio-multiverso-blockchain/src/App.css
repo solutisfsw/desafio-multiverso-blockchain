@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.App {
+  background-image: url('images/nasa-89125-unsplash.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+h1 {
+  padding: 1em 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.about {
+  text-align: center;
+  width: 55%;
+  margin: 0 auto;
+  color: #fff;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+li span {
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  padding: .7em;
+  background-color: #612167;
+  margin-top: 2.5em;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #612167;
+}
+
+.block-container {
+  background-color: #fff;
+  color: #612167;
+  width: fit-content;
+  padding: 1.5em;
+  margin: 0 auto;
+}
