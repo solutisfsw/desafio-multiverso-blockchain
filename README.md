@@ -7,39 +7,49 @@
 - Conteúdo (ex: nome e habilidades do soldado)
     - Considere também que as características de seu personagem tenham alguma relação com você na vida real, assim a gente já lhe conhece melhor.
 
-## REGRAS GERAIS
-Estamos interessados em ver como você utiliza suas habilidades e novas tecnologias para se apresentar para o mercado. Que jeito melhor do que nos mostrar a forma que você codifica? Queremos que você nos apresente  uma aplicação em Blockchain que traga alguma das vantagens dessa tecnologia tão revolucionaria. Aqui vão as regras. 
-- Faça a [cópia](https://help.github.com/articles/fork-a-repo/) do repositório (fork), desenvolva e submeta uma [solicitação de mudança](https://help.github.com/articles/creating-a-pull-request/) (pull request) no branch master.
-- Em caso de dúvidas basta abrir uma issue com sua pergunta (aqui mesmo no github) que nossa equipe irá respondê-lo assim que possível.
-- Para criação da sua aplicação pode ser usada a plataforma Ethereum ou pode ser criada do zero.
-- Sua Blockchain deve implementar o mínimo necessário para o funcionamento (método de consenso, árvore de merkle, conteúdo do bloco, segurança)
-- Sua Blockchain pode ser feita somente com um nó nesse estudo de caso
-- Criação da UI para sua Blockchain é opcional 
-- Instruções para execução da sua Blockchain devem estar presentes no README, além de seu nome e e-mail utilizados no cadastro Gupy
+### NOME:
+ICARO DE SANTANA MOTA
 
-
+### E-MAIL:
+ICAROSAN_11@HOTMAIL.COM
 
 ### PLATAFORMA
-- Ethereum
 
 ### INTERFACE
-- Java, JavaScript, Go ou Python
-
-Para UI sugerimos os seguintes frameworks:
-- Angular
-- ReactJS
-- CSS
-
+Python
 
 ### TESTES
 - Não se aplica.
 
 ### BUILD E EXECUÇÃO
-- Envie as instruções para execução da sua Blockchain. 
-- Cuidado com dependências externas não mapeadas que inviabilizem ou dificultem essas atividades.
-- Utilize ferramentas como npm e yarn para realizar as tarefas necessárias de build
-- Caso deseje, personalize sua aplicação e mostre que tem criatividade (+)
 
+Para a execução do programa desenvolvido serão necessários a instalação e importação de alguns pacotes do Python (Vesão 3.6), são eles:
 
+- Pipenv - $ pip install pipenv
+- Time
+- uuid (uuid4) - $ pip install uuid
+- flask - $ pip install Flask
+- hashlib - $ pip install hashlib
+- json - $ pip install pandas
+- request - $ pip install requests
+- urllib - $ pip install urllib3
 
-# BOA SORTE!
+Todas as importações são feitas no código do desafio.
+
+A aplicação que desenvolvi não possui User Interface, para executá-la recomendo o uso do Postman (aplicativo que pode ser instalado no Google Chrome) ou usando o cURL.
+Passos:
+- Executar o programa: $ python blockchain.py
+- O aviso de que a aplicação esta rodando na por 5000 irá aparecer.
+- No postman basta informar a url (http://localhost:5000) e completar com um dos caminhos desejados.
+- Para a função de mineração: http://localhost:5000/mine e mude a requesição para o tipo GET, clique em Send.
+- O resultado irá aparecer (pode ser usada várias vezes, minerando mais blocos).
+- Para ver a totalidade das correntes (todos os blocos): http://localhost:5000/chain com requisição GET, clique em Send.
+- Serão mostrados todos os blocos minerados no nó.
+- Para postar uma transação: http://localhost:5000/transactions/new com requisição POST, mudar para a aba -Body- e mudar o tipo da informação para JSON(aplication/json).
+- Feito isto basta preencher o corpo com a transação "Remetente, recebedor, quantidade e viajantes" (pode ser copiado de um dos blocos criados para facilitar) e clicar em Send
+- Para registrar outros nós na rede é possível utilizar novas portas da máquina, mas é possível exemplificar com o próprio nó (endereço)
+- Basta modificar o endereço no postman http://localhost:5000/nodes/register e na aba -Body- com infomação do tipo JSON e requisição POST informar o endereço do nó a se adcionar (ex: {"nodes": ["http://127.0.0.1:5000"]} ) clique em Send.
+- Agora é possível resolver conflitos, no endereço do postman informe http://localhost:5000/nodes/resolve com requisição GET, basta clicar em Send.
+- Como utilizamos o próprio endereço, não ocorrerá mudanças.
+
+#Estas foram todas as aplicações desenvolvidas em meu projeto.
