@@ -1,11 +1,12 @@
 [![N|Solid](http://solutis.com.br/images/logo.png)](http://solutis.com.br)
 
-# NOSSO DESAFIO
-“Você considera a ideia de multiverso, e pensa nessa estrutura como uma rede de infinitas possibilidades”. Parabéns soldado! Você foi selecionado para ser enviado a um novo universo. Porém as tecnologias existentes não conseguem garantir sua segurança durante a transferência entre universos. Você precisa criar uma Blockchain para registrar uma transação com segurança para o novo universo. Para isso sua Blockchain precisa possuir no mínimo as seguintes funções: 
-- Mineração (ex: poder computacional que o soldado vai ter que utilizar para criar um novo bloco para transação entre universos)
-- Transação (ex: registrar a ida do soldado para o outro universo no bloco da sua Blockchain)
+# NOSSO DESAFIO MORTY - BLOCKCHAIN
+“Você considera a ideia de multiverso, e pensa nessa estrutura como uma rede de infinitas possibilidades”. Parabéns soldado! Você foi selecionado para ser enviado a um novo universo. Porém as tecnologias existentes não conseguem garantir sua segurança durante a transferência entre universos. Você precisa criar uma Blockchain para lhe transferir com segurança para o novo universo. Para isso sua Blockchain precisa possuir no mínimo as seguintes funções: 
+- Mineração (ex: trabalho que o soldado vai ter para construir o portal)
+- Transação (ex: efetivar a ida do soldado para o outro universo)
 - Conteúdo (ex: nome e habilidades do soldado)
-    - Considere também que as características de seu personagem tenham alguma relação com você na vida real, assim a gente já lhe conhece melhor.
+
+Considere também que as características de seu personagem tenham alguma relação com você na vida real, assim a gente já lhe conhece melhor.
 
 ## REGRAS GERAIS
 Estamos interessados em ver como você utiliza suas habilidades e novas tecnologias para se apresentar para o mercado. Que jeito melhor do que nos mostrar a forma que você codifica? Queremos que você nos apresente  uma aplicação em Blockchain que traga alguma das vantagens dessa tecnologia tão revolucionaria. Aqui vão as regras. 
