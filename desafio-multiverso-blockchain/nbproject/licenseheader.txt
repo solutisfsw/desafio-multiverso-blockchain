@@ -1,0 +1,7 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Blockchain criada com o objetivo de participação no desafio Morty
+<#if licenseLast??>
+${licenseLast}
+</#if>
