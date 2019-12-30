@@ -1,7 +1,7 @@
 # MULTIVERSE PASS - DESAFIO MORTY
  
 - José Augusto Santos Rodrigues
-- jrodriguesaugusto@gmail.com
+- https://www.linkedin.com/in/augusto-rodrigues/
 
 ## BUILD E EXECUÇÃO
 
